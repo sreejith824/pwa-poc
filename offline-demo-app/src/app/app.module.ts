@@ -14,12 +14,15 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { CaseSearchComponent } from './case-search/case-search.component';
 import { CaseOverviewComponent } from './case-overview/case-overview.component';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CaseSearchComponent,
-    CaseOverviewComponent
+    CaseOverviewComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,26 @@
 <div>
+	<div>
+		<label>User logged in : {{case.userId}}</label>
+	</div>
 	<h3>Search case</h3>
 	<div>
-		<label>Case : </label> <input type="text" [(ngModel)]="case.id" 
+		<label>Case : </label> <input type="text" [(ngModel)]="caseDetails.id"
 			placeholder="Credit case number" />
+
 	</div>
 	<p>
-		<button (click)="goToCaseDetails(case.id)">Get Case Details</button>
+		<button (click)="getCaseDetails(caseDetails.id)">Get Case
+			Details</button>
 	</p>
+	<div>
+		<label>{{caseErrorMessage}}</label>
+	</div>
 	
+	
+	<input  (keyup)="onKey($event)"  [ngModel]="caseDetails.case.caseDescription"/>
+
+
+	<p>
+		<button (click)="saveCaseDescription()">Save Case Description</button>
+	</p>
 </div>

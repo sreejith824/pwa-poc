@@ -12,4 +12,5 @@ export class Case {
     caseStatus: string;
     caseCurrency: string;
     riskpoint: Riskpoint;
+    caseDescription: string;
 }
