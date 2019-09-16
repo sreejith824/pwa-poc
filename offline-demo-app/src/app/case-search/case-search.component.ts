@@ -19,7 +19,7 @@ export class CaseSearchComponent implements OnInit {
    public caseDetails: CaseDetails;
    public case: Case;
    private userId: string;
-   private caseErrorMessage: string;
+   public caseErrorMessage: string;
    values = '';
    
   constructor(

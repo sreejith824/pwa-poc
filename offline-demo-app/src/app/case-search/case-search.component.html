@@ -1,6 +1,6 @@
-<div>
+<div style="margin-left:20%; margin-top:10%;" >
 	<div>
-		<label>User logged in : {{case.userId}}</label>
+		<label>User logged in : {{caseDetails.userId}}</label>
 	</div>
 	<h3>Search case</h3>
 	<div>
@@ -13,12 +13,12 @@
 			Details</button>
 	</p>
 	<div>
-		<label>{{caseErrorMessage}}</label>
+		<label style="color:red">{{caseErrorMessage}}</label>
 	</div>
 	
 	
-	<input  (keyup)="onKey($event)"  [ngModel]="caseDetails.case.caseDescription"/>
-
+	<textarea rows="10" cols="120"   (keyup)="onKey($event)"  [ngModel]="caseDetails.case.caseDescription">
+		</textarea>
 
 	<p>
 		<button (click)="saveCaseDescription()">Save Case Description</button>
